@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Red Hat Text';
+    background-color: hsl(235, 16%, 14%);
+    position: relative;
+    text-align: center;
+}
+
+section {
+    position: absolute;
+    top : 20%;
+    background-color: hsl(234, 17%, 12%);
+    z-index: -1;
+    padding : 30px 20px;
+    width: 100%;
+}
+
+
+h1 {
+    color : #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.topCard {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 60px;
+}
+
+.cardItem {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding : 10px;
+}
+
+.cardItem > h2 {
+    position: absolute;
+    bottom : 25px;
+    color : hsl(345, 95%, 68%);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.topPart {
+    background-color: hsl(235, 16%, 14%);
+    /* opacity: 0.6; */
+    width : 70px;
+    height : 35px;
+    border-radius: 5px 5px 10px 10px;
+    animation : clock;
+}
+
+
+.bottomPart {
+    background-color: #6A1340  ;
+    width : 70px;
+    height : 35px;
+    border-radius: 10px 10px 5px 5px;
+    box-shadow: 0px 6px 0px -2px rgba(0,0,0,0.3);
+}
+
+.bottomCard {
+    display: flex; 
+    gap: 15px;
+    margin-top: 10px; 
+}
+
+.timeItem {
+    font-size: 10px;
+    color: #fff;
+    opacity: 0.3;
+    letter-spacing: 5px;
+}
+
+.timeContainer {
+    display: flex;
+    justify-content: space-evenly;
+    color : #fff;
+    opacity: 0.3;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-size: 8px;
+    letter-spacing: 5px;
+}
+
+.timeContainer > p {
+    position: relative;
+}
+
+.timeContainer > p:first-child {
+    left : -5px;
+}
+
+.timeContainer > p:nth-child(2) {
+    left : 20px;
+}
+
+.timeContainer > p:nth-child(3) {
+    left : 30px;
+}
+
+.timeContainer > p:nth-child(4) {
+    left : 30px;
+}
+
+footer {
+    position: absolute;
+    bottom : 50px;
+    left : 33%;
+}
+
+.socMedContainer {
+    display: flex;
+    gap : 30px;
+}
+
+ion-icon {
+    color : #fff;
+    font-size: 30px;
+    transition: 0.3s ease-in-out;
+}
+
+ion-icon:hover {
+    color : hsl(345, 95%, 68%);
+}
+
+@media screen and (min-width : 1200px) {
+    .topCard {
+        justify-content: center;
+        gap : 15px;
+    }
+
+    .topPart {
+        width : 150px;
+        height : 70px;
+    }
+    
+    .bottomPart {
+        width : 150px;
+        height : 70px;
+    }
+
+    .cardItem > h2 {
+        bottom : 45px;
+        font-size: 50px;
+    }
+
+    .timeContainer {
+        font-size: 15px;
+    }
+
+    .timeContainer > p:first-child {
+        left : 110px;
+    }
+    
+    .timeContainer > p:nth-child(2) {
+        left : 70px;
+    }
+    
+    .timeContainer > p:nth-child(3) {
+        left : 0px;
+    }
+    
+    .timeContainer > p:nth-child(4) {
+        left : -80px;
+    }
+
+    footer {
+        left : 45%;
+    }
+    
+}
